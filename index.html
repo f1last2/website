@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siruise Akodjinlossi — Concepteur Multimédia Intelligent</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<div class="wrapper">
+
+  <nav id="nav">
+    <div class="nav-logo">SIRUISE<span>.</span></div>
+    <div class="nav-links">
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Parcours</a>
+      <a href="#projects">Projets</a>
+      <a href="#stack">Stack</a>
+      <a href="#academic">Formation</a>
+    </div>
+    <button class="nav-cta">Discutons →</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#expertise" class="mobile-link">Expertise</a>
+    <a href="#experience" class="mobile-link">Parcours</a>
+    <a href="#projects" class="mobile-link">Projets</a>
+    <a href="#stack" class="mobile-link">Stack</a>
+    <a href="#academic" class="mobile-link">Formation</a>
+    <button class="mobile-cta">Discutons →</button>
+  </div>
+
+  <div class="bento">
+
+    <!-- ═══ HERO ═══ -->
+    <div class="card c-hero" id="hero-card">
+      <div class="hero-inner">
+
+        <!-- TEXT -->
+        <div class="hero-text">
+          <div class="label">Concepteur Multimédia Intelligent</div><br>
+          <h1>Siruise Akodjinlossi</h1><br>
+          <h2 class="sub">Designer visuel. Développeur. Créateur d'expériences numériques et d'agents intelligents.</h2><br>
+          <p>Je fusionne design stratégique, développement web et automatisation intelligente pour concevoir des solutions numériques qui ont du sens. Du pixel à l'interface, du code à l'agent AI.Je transforme chaque idée en une expérience impactante, pensée pour les humains et propulsée par la technologie.</p><br>
+          <div class="btn-row">
+            <a href="#projects" class="btn-primary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+              Voir mes projets
+            </a>
+            <a href="#" class="btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Télécharger mon CV
+            </a>
+          </div><br>
+          <div class="hero-badges">
+            <span class="badge">3 ans · Codoc Agency</span>
+            <span class="badge">Agents AI · n8n</span>
+            <span class="badge">Hackathon AUF 2024</span>
+            <span class="badge">Certifié MTN</span>
+            <span class="badge">Formation · Ningbo, Chine</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ STATUS ═══ -->
+    <div class="card c-status">
+      <div class="status-card">
+        <div>
+          <div class="availability"><div class="dot"></div><span class="avail-text">Disponible pour missions</span></div>
+          <div class="section-title">Présence</div>
+          <div class="location" style="margin-top:12px">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Bénin · Afrique de l'Ouest
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-item"><div class="stat-num">3<span>+</span></div><div class="stat-label">Années d'expérience professionnelle</div></div>
+          <div class="stat-item"><div class="stat-num">15<span>+</span></div><div class="stat-label">Outils & technologies maîtrisés</div></div>
+          <div class="stat-item"><div class="stat-num">6<span>+</span></div><div class="stat-label">Langages de programmation</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ EXPERTISE ═══ -->
+    <div class="card c-expertise" id="expertise">
+      <div class="section-title">Expertise</div>
+      <div class="section-sub">Ce que je maîtrise, ce que je transmets</div>
+      <div class="expertise-grid">
+        <div class="exp-item">
+          <div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <div class="exp-name">Création visuelle</div>
+          <div class="exp-desc">Identités, illustrations, chartes graphiques</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+          <div class="exp-name">Design d'interface</div>
+          <div class="exp-desc">Wireframes, prototypes, UI systems</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <div class="exp-name">Développement web</div>
+          <div class="exp-desc">Front-end, CMS, solutions sur mesure</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+          <div class="exp-name">Agents AI · n8n</div>
+          <div class="exp-desc">Automatisation, workflows intelligents</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+          <div class="exp-name">Formation pédagogique</div>
+          <div class="exp-desc">Ateliers, mentorat, montée en compétence</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="exp-name">Leadership & Numérique</div>
+          <div class="exp-desc">Pilotage d'équipes, transformation digitale</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <div class="card c-exp" id="experience">
+      <div class="section-title">Parcours professionnel</div>
+      <div class="section-sub">Postes, missions et engagements terrain</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot active">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><div class="tl-title">Designer Graphiste Senior</div><div class="tl-company">Codoc Agency</div></div>
+              <div class="tl-date">2022 — 2025</div>
+            </div>
+            <p class="tl-desc">Conception d'identités visuelles et interfaces utilisateur de A à Z. Direction artistique de campagnes digitales. Formation et encadrement des designers juniors, transfert de méthodes et élévation du niveau collectif.</p>
+            <div class="tl-tags"><span class="tag">UI/UX</span><span class="tag">Direction artistique</span><span class="tag">Mentorat</span><span class="tag">Branding</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><div class="tl-title">Créateur d'Agents AI</div><div class="tl-company">Missions indépendantes · n8n</div></div>
+              <div class="tl-date">En cours</div>
+            </div>
+            <p class="tl-desc">Conception et déploiement d'agents AI et de workflows d'automatisation intelligents avec n8n. Création de pipelines connectant APIs, LLMs et outils métiers pour automatiser des processus complexes à haute valeur ajoutée.</p>
+            <div class="tl-tags"><span class="tag">n8n</span><span class="tag">Agents AI</span><span class="tag">Automatisation</span><span class="tag">LLM</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><div class="tl-title">Développeur Web Freelance</div><div class="tl-company">BARIBA · Benking Services</div></div>
+              <div class="tl-date">Missions indépendantes</div>
+            </div>
+            <p class="tl-desc">Développement et déploiement de solutions web pour des structures béninoises. Architecture front-end, intégration des contenus, mise en ligne et formation des équipes clientes.</p>
+            <div class="tl-tags"><span class="tag">Développement web</span><span class="tag">WordPress</span><span class="tag">Formation client</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ PROJETS ═══ -->
+    <div class="card c-projects" id="projects">
+      <div class="section-title">Projets phares</div>
+      <div class="section-sub">Réalisations remarquables et compétitions</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-cover cover-hackathon">
+            <svg class="network-svg" viewBox="0 0 500 160" preserveAspectRatio="xMidYMid slice">
+              <defs><radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15"/><stop offset="100%" stop-color="#020617" stop-opacity="0"/></radialGradient></defs>
+              <rect width="500" height="160" fill="#020617"/><ellipse cx="250" cy="80" rx="200" ry="80" fill="url(#g1)"/>
+              <line x1="80" y1="40" x2="180" y2="80" stroke="#22D3EE" stroke-opacity=".25" stroke-width="1"/>
+              <line x1="180" y1="80" x2="250" y2="50" stroke="#22D3EE" stroke-opacity=".25" stroke-width="1"/>
+              <line x1="250" y1="50" x2="330" y2="90" stroke="#22D3EE" stroke-opacity=".25" stroke-width="1"/>
+              <line x1="330" y1="90" x2="420" y2="60" stroke="#22D3EE" stroke-opacity=".25" stroke-width="1"/>
+              <line x1="180" y1="80" x2="200" y2="130" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="250" y1="50" x2="260" y2="120" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="330" y1="90" x2="310" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <circle cx="80" cy="40" r="4" fill="#22D3EE" fill-opacity=".6"/><circle cx="180" cy="80" r="5" fill="#22D3EE" fill-opacity=".8"/>
+              <circle cx="250" cy="50" r="6" fill="#22D3EE"/><circle cx="330" cy="90" r="4" fill="#22D3EE" fill-opacity=".7"/>
+              <circle cx="420" cy="60" r="3" fill="#22D3EE" fill-opacity=".5"/><circle cx="200" cy="130" r="3" fill="#22D3EE" fill-opacity=".4"/>
+              <circle cx="260" cy="120" r="4" fill="#22D3EE" fill-opacity=".5"/><circle cx="310" cy="140" r="3" fill="#22D3EE" fill-opacity=".4"/>
+              <circle cx="250" cy="50" r="12" fill="none" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <circle cx="250" cy="50" r="20" fill="none" stroke="#22D3EE" stroke-opacity=".08" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-badge">Compétition · AUF 2024</div>
+            <div class="project-title">CovAC — Covoiturage Abomey-Calavi</div>
+            <p class="project-desc">Application conçue lors du Hackathon Numérique de l'AUF. Interface pour la mobilité urbaine locale, mise en relation conducteurs/passagers sous contrainte temporelle intense.</p>
+            <div class="project-tags"><span class="tag">UI Design</span><span class="tag">Prototypage</span><span class="tag">Mobilité</span><span class="tag">Hackathon</span></div>
+            <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-cover cover-pont">
+            <svg class="network-svg" viewBox="0 0 500 160" preserveAspectRatio="xMidYMid slice">
+              <defs><radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#22D3EE" stop-opacity="0.1"/><stop offset="100%" stop-color="#020617" stop-opacity="0"/></radialGradient></defs>
+              <rect width="500" height="160" fill="#020617"/><ellipse cx="250" cy="80" rx="220" ry="70" fill="url(#g2)"/>
+              <path d="M60 140 Q130 40 250 140" stroke="#22D3EE" stroke-opacity=".35" stroke-width="1.5" fill="none"/>
+              <path d="M250 140 Q370 40 440 140" stroke="#22D3EE" stroke-opacity=".35" stroke-width="1.5" fill="none"/>
+              <line x1="120" y1="73" x2="120" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="160" y1="53" x2="160" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="200" y1="45" x2="200" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="300" y1="45" x2="300" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="340" y1="53" x2="340" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="380" y1="73" x2="380" y2="140" stroke="#22D3EE" stroke-opacity=".2" stroke-width="1"/>
+              <line x1="60" y1="140" x2="440" y2="140" stroke="#22D3EE" stroke-opacity=".4" stroke-width="2"/>
+              <circle cx="250" cy="42" r="6" fill="#22D3EE" fill-opacity=".9"/>
+              <circle cx="250" cy="42" r="14" fill="none" stroke="#22D3EE" stroke-opacity=".25" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-badge">Application Web · Projet personnel</div>
+            <div class="project-title">Pont vers l'Allemagne</div>
+            <p class="project-desc">Plateforme d'accompagnement à la mobilité internationale vers l'Allemagne. Design empathique, orientation dans les démarches administratives, interface claire et rassurante.</p>
+            <div class="project-tags"><span class="tag">Développement web</span><span class="tag">UX Empathique</span><span class="tag">International</span></div>
+            <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ STACK ═══ -->
+    <div class="card c-stack" id="stack">
+      <div class="section-title">Stack technique</div>
+      <div class="section-sub">Outils maîtrisés, technologies déployées</div>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <div class="stack-group-label"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span class="stack-group-name">Langages</span></div>
+          <div class="pills"><span class="pill">C</span><span class="pill">C++</span><span class="pill">C#</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">Python</span><span class="pill">PHP</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg><span class="stack-group-name">Agents AI & Automatisation</span></div>
+          <div class="pills"><span class="pill">n8n</span><span class="pill">Workflows AI</span><span class="pill">API LLM</span><span class="pill">Automatisation</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg><span class="stack-group-name">3D Design</span></div>
+          <div class="pills"><span class="pill">Blender</span><span class="pill">SketchUp</span><span class="pill">Unity 3D</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg><span class="stack-group-name">UI-UX & Production visuelle</span></div>
+          <div class="pills"><span class="pill">Figma</span><span class="pill">Adobe XD</span><span class="pill">Photoshop</span><span class="pill">Illustrator</span><span class="pill">Premiere Pro</span></div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-group-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="stack-group-name">No-Code & CMS</span></div>
+          <div class="pills"><span class="pill">FlutterFlow</span><span class="pill">WordPress</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <div class="card c-certs">
+      <div class="section-title">Certifications</div>
+      <div class="section-sub">Reconnaissances formelles</div>
+      <div class="certs-list">
+        <div class="cert-item">
+          <div class="cert-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <div><div class="cert-name">Data Analysis</div><div class="cert-org">FORCE-N</div></div>
+          <div class="cert-badge">Certifié</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div>
+          <div><div class="cert-name">Développement WordPress</div><div class="cert-org">MTN</div></div>
+          <div class="cert-badge">Certifié</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div><div class="cert-name">Informatique avancée</div><div class="cert-org">Ningbo, Chine · International</div></div>
+          <div class="cert-badge">International</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ PARCOURS ACADÉMIQUE ═══ -->
+    <div class="card c-academic" id="academic">
+      <div class="label">Formation</div>
+      <div class="section-title">Parcours académique</div>
+      <div class="section-sub">Les étapes qui ont forgé mon expertise — du lycée à l'université</div>
+      <div class="academic-grid">
+
+        <div class="academic-card">
+          <div class="academic-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="academic-body">
+            <div class="academic-level">Licence · Université</div>
+            <div class="academic-title">Licence Internet & Multimédia</div>
+            <div class="academic-school">IFRI — Institut de Formation et de Recherche en Informatique · Bénin</div>
+            <div class="academic-date">Formation universitaire</div>
+            <div class="academic-desc">Spécialisation en conception multimédia, développement web, design d'interfaces et communication numérique. Socle académique de l'expertise digitale.</div>
+          </div>
+        </div>
+
+        <div class="academic-card">
+          <div class="academic-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <div class="academic-body">
+            <div class="academic-level">Diplôme · Lycée Technique</div>
+            <div class="academic-title">Technicien Informatique</div>
+            <div class="academic-school">LT-ASBA — Lycée Technique Adenauer Soglo Béhanzin Ahouandé · Bénin</div>
+            <div class="academic-date">Formation technique</div>
+            <div class="academic-desc">Fondements techniques en informatique, maintenance, réseaux et programmation. Première maîtrise des outils et systèmes numériques.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ CONTACT ═══ -->
+    <div class="card c-contact" id="contact">
+      <div class="contact-inner">
+        <div class="label" style="justify-content:center;margin-bottom:20px">Contact</div>
+        <div class="contact-title">Donnons forme à votre<br><span>prochaine idée.</span></div>
+        <p class="contact-sub">Ouvert aux collaborations, missions freelance et projets à impact.</p>
+        <a href="mailto:siruise@email.com" class="btn-primary" style="display:inline-flex;margin:0 auto">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Démarrer une conversation
+        </a>
+        <div class="social-row">
+          <a href="#" class="social-btn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+          <a href="#" class="social-btn" title="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+          <a href="#" class="social-btn" title="Behance"><svg viewBox="0 0 24 24"><path d="M1 12h10a4 4 0 000-8H1v16h11a4 4 0 000-8H1"/><path d="M15 7h8M15 12h8M16 17h7"/></svg></a>
+          <a href="mailto:siruise@email.com" class="social-btn" title="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <div class="copyright">© 2025 Siruise Akodjinlossi · Tous droits réservés · Conçu avec intention</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
