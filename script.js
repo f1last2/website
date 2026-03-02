@@ -50,3 +50,23 @@ if(contactBtn){
     window.location.href = mail;
   });
 }
+
+// SOCIAL BUTTONS
+const socialButtons = document.querySelectorAll('.social-btn');
+if(socialButtons.length){
+  socialButtons.forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      const href = btn.getAttribute('href');
+      if(!href || href === '#'){
+        e.preventDefault();
+        alert('Lien non configuré pour le moment.');
+        return;
+      }
+      if(href.startsWith('http')){
+        e.preventDefault();
+        window.open(href, '_blank','noopener');
+      }
+      // mailto handled by browser; if we want, could replicate earlier fallback
+    });
+  });
+}
