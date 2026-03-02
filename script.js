@@ -32,3 +32,21 @@ gsap.fromTo('.hero-text p',{opacity:0,y:10},{opacity:1,y:0,duration:.6,delay:.95
 gsap.fromTo('.btn-row',{opacity:0,y:10},{opacity:1,y:0,duration:.6,delay:1.1});
 gsap.fromTo('.hero-badges',{opacity:0,y:8},{opacity:1,y:0,duration:.5,delay:1.25});
 gsap.fromTo('.photo-wrap',{opacity:0,x:-20},{opacity:1,x:0,duration:.8,delay:.4});
+
+// CONTACT BUTTON: ensure mailto works and provide user feedback
+const contactBtn = document.querySelector('.c-contact .btn-primary');
+if(contactBtn){
+  contactBtn.addEventListener('click', e=>{
+    // fallback in case default mailto is ignored or no mail client
+    e.preventDefault();
+    const mail = contactBtn.getAttribute('href');
+    // copy address to clipboard for user convenience
+    const addr = mail.replace(/^mailto:/,'');
+    navigator.clipboard.writeText(addr).then(()=>{
+      // optionally show a brief message
+      alert('Adresse email copiée dans le presse‑papier. Vous pouvez la coller dans votre client mail.');
+    }).catch(()=>{});
+    // finally, try to open the mail client normally
+    window.location.href = mail;
+  });
+}

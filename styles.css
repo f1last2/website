@@ -202,6 +202,8 @@ p{line-height:1.75;color:var(--text);font-size:15px}
 
 /* CONTACT */
 .contact-inner{text-align:center;padding:48px 32px}
+/* ensure contact button sits above any overlapping elements */
+.c-contact .btn-primary{position:relative;z-index:1}
 .contact-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--white);margin-bottom:16px}
 .contact-title span{color:var(--accent)}
 .contact-sub{font-size:16px;color:var(--muted);margin-bottom:36px}
