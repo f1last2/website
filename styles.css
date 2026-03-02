@@ -104,18 +104,18 @@ p{line-height:1.75;color:var(--text);font-size:15px}
 .btn-secondary{background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-weight:500;font-size:14px;padding:12px 24px;border-radius:10px;border:1px solid var(--border);cursor:none;display:flex;align-items:center;gap:8px;transition:all .3s;text-decoration:none}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
 
-/* STATUS */
-.status-card{height:100%;display:flex;flex-direction:column;justify-content:space-between}
-.availability{display:flex;align-items:center;gap:10px;margin-bottom:24px}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 8px var(--accent)}50%{opacity:.6;box-shadow:0 0 20px var(--accent)}}
-.avail-text{font-size:14px;color:var(--accent);font-weight:500}
-.stat-row{display:flex;flex-direction:column;gap:16px;margin-top:auto}
-.stat-item{border-top:1px solid var(--border);padding-top:16px}
-.stat-num{font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:var(--white)}
-.stat-num span{color:var(--accent)}
-.stat-label{font-size:12px;color:var(--dim);margin-top:2px}
-.location{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--dim);margin-top:20px}
+/* Carte STATUS avec photo uniquement */
+.c-status{
+    overflow:hidden; /* empêche débordement */
+}
+
+/* Image qui remplit la carte */
+.profile-img{
+    width:100%;
+    height:100%;
+    object-fit:cover; /* adapte sans déformation */
+    display:block;
+}
 
 /* EXPERTISE */
 .expertise-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
