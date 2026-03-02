@@ -51,28 +51,7 @@ if(contactBtn){
   });
 }
 
-// NAVIGATION CTA
-const navCta = document.querySelector('.nav-cta');
-if(navCta){
-  navCta.addEventListener('click', ()=>{
-    const contactSection = document.getElementById('contact');
-    if(contactSection){
-      contactSection.scrollIntoView({behavior:'smooth'});
-    }
-  });
-}
-
-const mobileCta = document.querySelector('.mobile-cta');
-if(mobileCta){
-  mobileCta.addEventListener('click', ()=>{
-    const contactSection = document.getElementById('contact');
-    if(contactSection){
-      contactSection.scrollIntoView({behavior:'smooth'});
-    }
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-  });
-}
+// NAVIGATION CTA removed: hyperlinks now use mailto directly
 
 // SOCIAL BUTTONS
 const socialButtons = document.querySelectorAll('.social-btn');
