@@ -99,9 +99,10 @@ p{line-height:1.75;color:var(--text);font-size:15px}
 .badge{font-size:12px;padding:4px 12px;border-radius:999px;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.2);color:var(--muted)}
 
 .btn-row{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
-.btn-primary{background:var(--accent);color:var(--bg);font-family:'Inter',sans-serif;font-weight:600;font-size:14px;padding:12px 24px;border-radius:10px;border:none;cursor:none;display:flex;align-items:center;gap:8px;transition:all .3s;text-decoration:none}
+/* use pointer so users know the element is clickable */
+.btn-primary{background:var(--accent);color:var(--bg);font-family:'Inter',sans-serif;font-weight:600;font-size:14px;padding:12px 24px;border-radius:10px;border:none;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .3s;text-decoration:none}
 .btn-primary:hover{box-shadow:0 0 24px rgba(34,211,238,.4);transform:translateY(-2px)}
-.btn-secondary{background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-weight:500;font-size:14px;padding:12px 24px;border-radius:10px;border:1px solid var(--border);cursor:none;display:flex;align-items:center;gap:8px;transition:all .3s;text-decoration:none}
+.btn-secondary{background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-weight:500;font-size:14px;padding:12px 24px;border-radius:10px;border:1px solid var(--border);cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .3s;text-decoration:none}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
 
 /* Carte STATUS avec photo uniquement */
